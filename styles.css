@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+	--Paleblue: hsl(225, 100%, 94%);
+	--Brightblue: hsl(245, 75%, 52%);
+
+	--Verypaleblue: hsl(225, 100%, 98%);
+	--Desaturatedblue: hsl(224, 23%, 55%);
+	--Darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 16px;
+	background: var(--Paleblue);
+	padding: 3rem 4rem;
+}
+
+.container {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.8rem;
+}
+
+.hero-img img {
+	max-width: 100%;
+	border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-text h2 {
+	font-weight: 900;
+	color: var(--Darkblue);
+}
+
+.hero-text p {
+	font-weight: 700;
+	color: hsl(224, 23%, 55%, 70%);
+	text-align: center;
+	padding: 0 4rem;
+	margin-top: 0.5rem;
+}
+
+.pricing {
+	background: var(--Verypaleblue);
+	padding: 0 0.5rem;
+	border-radius: 1rem;
+}
+
+.content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+ul {
+	list-style-type: none;
+	position: relative;
+	right: 3rem;
+}
+
+ul li:nth-child(1) {
+	color: var(--Darkblue);
+	font-weight: 900;
+	font-size: 15px;
+}
+
+ul li:nth-child(2) {
+	color: var(--Desaturatedblue);
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.content a {
+	color: var(--Brightblue);
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.content a:hover {
+	cursor: pointer;
+	color: var(--Desaturatedblue);
+	text-decoration: none;
+}
+
+.proceed {
+	background: hsl(245, 75%, 52%);
+	color: white;
+	width: 80%;
+	padding: 1rem 0;
+	border-radius: 1rem;
+	border: none;
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	box-shadow: 0px 17px 19px -5px hsl(245, 75%, 52%);
+	margin: 1.5rem 0;
+}
+
+.proceed:hover {
+	background: hsl(228, 45%, 44%);
+	cursor: pointer;
+}
+
+.cancel {
+	background: white;
+	color: hsl(224, 23%, 55%);
+	font-family: "Red Hat Display", sans-serif;
+	font-weight: 700;
+	border: none;
+	font-size: 15px;
+	margin-bottom: 1.5rem;
+}
+
+.cancel:hover {
+	cursor: pointer;
+	color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+	.container {
+		width: 400px;
+		margin: 0 auto;
+	}
+}
